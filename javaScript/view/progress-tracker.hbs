@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new-style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="progress-tracker.js" defer></script>
+  <title>Progress tracker</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo1"><img src="logo.png" alt="logo" ></a>
+    <ul class="navigation1">
+      <li><a href="/">Typing game</a></li>
+      <li><a href="leaderboard">Leaderboard</a></li>
+      <li><a href="#">Modes</a></li>
+      <li><a href="/front-page">Log out</a></li>
+    </ul>  
+
+      <a href="#" class="image1"><img src="profile-image.png" alt="profile-pic"></a> 
+    </header>
+
+
+    <div class="wrapper2"> 
+
+        <ul class="result-details2">
+          <li>
+            <p>Highest WPM</p>
+          </li>
+          <li>
+            <p>Average WPM</p>
+          </li>
+          <li>
+            <p>Highest acuuracy</p>
+          </li>
+          <li>
+            <p>Average acuuracy</p>
+          </li>
+          <li>
+            <p>Time typing</p> 
+          </li>
+        </ul>
+
+    </div>
+    <div class="wrapper3"> 
+        <ul class="result-details3">
+          <li class="highest-wpm">
+            <span></span>
+          </li>
+          <li class="average-wpm">
+            <span></span>
+          </li>
+          <li class="highest-accuracy">
+            <span></span>
+
+          </li>
+          <li class="average-accuracy">
+            <span></span>
+    
+          </li>
+          <li class="time-typing">
+            <span></span>    
+          </li>
+        </ul>
+    </div>
+  <div class="toggle-bar">
+    <div class="option active" id="yearWpm">Year</div>
+
+    <div class="option" id="lastLastMonthWpm"></div>
+    <div class="option" id="lastMonthWpm"></div>
+    <div class="option" id="currentMonthWpm"></div>
+
+  </div> 
+
+  <canvas id="wpm-graph" width="1000" height="500" style="margin: 0 auto;"></canvas>
+
+  <div class="toggle-bar-accuracy">
+    <div class="option active" id="yearAccuracy">Year</div>
+    <div class="option" id="lastLastMonthAccuracy"></div>
+    <div class="option" id="lastMonthAccuracy"></div>
+    <div class="option" id="currentMonthAccuracy"></div>
+  </div> 
+  <canvas id="accuracy-graph" width="1000" height="600" style="margin: 0 auto;"></canvas>
+
+
+
+
+
+</body>
+</html>
+
